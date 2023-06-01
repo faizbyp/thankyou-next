@@ -26,3 +26,11 @@ Migrating schema to DB
 npx prisma migrate dev --name init
 ```
 
+## Few notes
+
+Next JS can communicate to DB:(SQLite) via an ORM:(Prisma).
+
+Next JS consist of 2 component, **client** and **server**.
+
+- By default it is using server component. But if a function runs on the server, it must be declared explicitly by using `"use server"`.
+- If you're writing a component with event listener or any other property which runs on the client, it must be declared with `"use client"` on the top level of the file.
