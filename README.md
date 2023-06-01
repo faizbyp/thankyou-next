@@ -18,3 +18,11 @@ Init Prisma with SQLite
 ```bash
 npx prisma init --datasource-provider sqlite
 ```
+
+Create schema (model)
+
+Migrating schema to DB
+```bash
+npx prisma migrate dev --name init
+```
+
